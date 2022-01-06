@@ -121,21 +121,19 @@ func (rec *Recorder) Start() (string, error) {
 			"uid": "%d",
 			"clientRequest": {
 				"token": "%s",
-				"recordingConfig":{
-			"channelType":0,
-			"streamTypes":2,
-			"audioProfile":1,
-			"videoStreamType":0,
-			"maxIdleTime":120,
-			"transcodingConfig":{
-				"width":360,
-				"height":640,
-				"fps":30,
-				"bitrate":600,
-				"maxResolutionUid":"1",
-				"mixedVideoLayout":1
-				}
-			},
+				"recordingConfig": {
+					"maxIdleTime": 30,
+					"streamTypes": 2,
+					"channelType": 1,
+					"transcodingConfig": {
+						"height": 720,
+						"width": 1280,
+						"bitrate": 2260,
+						"fps": 15,
+						"mixedVideoLayout": 1,
+						"backgroundColor": "#000000"
+					}
+				},
 				"storageConfig": {
 					"vendor": %d,
 					"region": %d,
