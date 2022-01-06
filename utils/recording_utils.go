@@ -124,7 +124,7 @@ func (rec *Recorder) Start() (string, error) {
 				"recordingConfig": {
 					"maxIdleTime": 1000,
 					"streamTypes": 2,
-					"channelType": 1,
+					"channelType": 0,
 					"transcodingConfig": {
 						"height": 720,
 						"width": 1280,
