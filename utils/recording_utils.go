@@ -136,7 +136,7 @@ func (rec *Recorder) Start() (string, error) {
 				},
 				"recordingFileConfig": {
                     "avFileType": [
-                      "hls"
+                      "hls","mp4"
                     ]
                   },
 				"storageConfig": {
