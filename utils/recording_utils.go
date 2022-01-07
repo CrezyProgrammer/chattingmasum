@@ -134,9 +134,7 @@ func (rec *Recorder) Start() (string, error) {
 						"backgroundColor": "#000000"
 					}
 				},
-                    recordingFileConfig: {
-                        avFileType: ["hls"]
-                    },
+                
                     storageConfig: {
 					"vendor": %d,
 					"region": %d,
