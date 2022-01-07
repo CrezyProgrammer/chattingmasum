@@ -122,7 +122,7 @@ func (rec *Recorder) Start() (string, error) {
 			"clientRequest": {
 				"token": "%s",
 				"recordingConfig": {
-					"maxIdleTime": 30,
+					"maxIdleTime": 300,
 					"streamTypes": 2,
 					"channelType": 1,
 					"transcodingConfig": {
@@ -134,7 +134,10 @@ func (rec *Recorder) Start() (string, error) {
 						"backgroundColor": "#000000"
 					}
 				},
-				"storageConfig": {
+                    recordingFileConfig: {
+                        avFileType: ["hls"]
+                    },
+                    storageConfig: {
 					"vendor": %d,
 					"region": %d,
 					"bucket": "%s",
